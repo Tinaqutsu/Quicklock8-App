@@ -1,4 +1,4 @@
-# vue-routing-example
+# Quickloc8-App
 
 ## Project setup
 ```
