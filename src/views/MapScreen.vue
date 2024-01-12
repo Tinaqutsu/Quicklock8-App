@@ -12,7 +12,7 @@
 <script>
 import L from 'leaflet';
 import 'leaflet/dist/leaflet.css';
-import vehicleCoordinates from '@/assets/vehicleCoordinates.json'; // Import coordinates
+import vehicleCoordinates from '@/assets/vehicleCoordinates.json'; // Importing coordinates
 
 export default {
   data() {
@@ -25,7 +25,7 @@ export default {
   },
   methods: {
     initMap() {
-      this.map = L.map(this.$refs.map).setView([-33.92, 18.58], 10); // Set initial map coordinates and zoom level
+      this.map = L.map(this.$refs.map).setView([-33.92, 18.58], 10); // Setting initial map coordinates and zoom level
 
       L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
         attribution: '© OpenStreetMap contributors',
@@ -38,7 +38,7 @@ export default {
           iconSize: [38, 38],
           iconAnchor: [19, 19],
           popupAnchor: [0, -15],
-          rotationAngle: parseFloat(coord.heading), // Set the rotation angle based on the heading
+          rotationAngle: parseFloat(coord.heading),
         });
 
         L.marker([parseFloat(coord.latitude), parseFloat(coord.longitude)], {
@@ -64,7 +64,7 @@ export default {
   position: absolute;
   bottom: 20px;
   left: 20px;
-  z-index: 1000; /* Ensure it's above the map */
+  z-index: 1000; 
   cursor: pointer;
   } 
 
@@ -72,7 +72,7 @@ export default {
     position: absolute;
     bottom: 20px;
     left: 20px;
-    z-index: 1000; /* Ensure it's above the map */
+    z-index: 1000; 
     width: 120px;
     cursor: pointer;
   }
