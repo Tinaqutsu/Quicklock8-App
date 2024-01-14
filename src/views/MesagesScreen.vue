@@ -1,4 +1,3 @@
-[2:10 PM] Vuyolwethu Mabhuleka
 <template>
   <div class="messages-container">
     <h1 align="center" justify="center">Messages</h1>
